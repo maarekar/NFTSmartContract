@@ -7,6 +7,6 @@ import "hardhat/console.sol";
 contract MyNFT is ERC1155 {
     constructor(string memory tokenURI) public ERC1155(tokenURI) {
         _mint(msg.sender, 0, 1, "");
-        console.log("create NFT");
+        console.log("mint NFT");
     }
 }

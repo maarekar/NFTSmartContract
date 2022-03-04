@@ -1,7 +1,7 @@
 async function main () {
     const MyNFT = await hre.ethers.getContractFactory("MyNFT");
 
-    const URI = 'https://bafybeihul6zsmbzyrgmjth3ynkmchepyvyhcwecn2yxc57ppqgpvr35zsq.ipfs.dweb.link/0.json';
+    const URI = 'ipfs://QmVRrWSGUbFV1uFsDQxg6swZfzw9s728J8c9hUZw4FTTvY';
 
     const myContractDeployed = await MyNFT.deploy(URI);
 
